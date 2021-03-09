@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>My jug test</title>
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header class="main-header" id="header">
+    <div class="wrapper">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="img/svg/jug-logo.svg" alt="company-logo">
+            </div>
+            <h1>Конференции, которые нужны</h1>
+            <div class="header-descr">
+                Мы, JUG Ru Group, делаем крупнейшие конференции для программистов и сочувствующих.
+                <ul>
+                    <li>С нас — крутая программа, топовые спикеры, технические доклады без воды.</li>
+                    <li>С вас — готовность смотреть и общаться.</li>
+                </ul>
+            </div>
+            <div class="header-btn">
+                <button type="button" class="btn black facepalm" onclick="openModal('come-in-modal')">Купить билет </button>
+                <button type="button" class="btn yellow handup" onclick="openModal('come-in-modal')">Послать в жопу </button>
+            </div>
+        </div>
+        <div class="decor-bg">
+            <div class="decor-img"></div>
+            <svg class="decor-stripes">
+                <path stroke-width='1200' class="animate" stroke-dasharray="75 75" fill='none' stroke="#000" d="M 0,0 C 0,1 0,1 600,1 " />
+            </svg>
+        </div>
+    </div>
+</header>
+<div class="modal" id="come-in-modal">
+    <div class="wrapper">
+        <div class="modal-content">
+            <div class="modal-form modal-item">
+                <h2>Я хочу знать, когда<br>  будет офлайн</h2>
+                <form action="" method="post">
+                    <label class="form-group">
+                        <input name="name" type="email" placeholder="Укажите email" required>
+                    </label>
+                    <button type="submit" class="btn submit-btn">Подписаться</button>
+                </form>
+                <div class="politic-text">
+                    Нажимая на кнопку вы соглашаетесь  на обработку <a href="">персональных данных</a>
+                </div>
+                <div class="form-send-massage">Спасибо, что подписались на нашу рассылку!</div>
+            </div>
+            <div class="modal-checklist modal-item">
+                <h2>Идите в жопу!</h2>
+                <form action="" method="post">
+                    <label for="radio1">
+                        Вы свои цены видели?
+                        <input name="radio" type="radio" id="radio1" value="Вы свои цены видели?">
+                    </label>
+                    <label for="radio2">
+                        Доклады ни о чем
+                        <input name="radio" type="radio" id="radio2" value="Доклады ни о чем">
+                    </label>
+                    <label for="radio3">
+                        У вас там всё хорошо?
+                        <input name="radio" type="radio" id="radio3" value="У вас там всё хорошо?">
+                    </label>
+                    <label for="radio4">
+                        Денег нет, но вы держитесь
+                        <input name="radio" type="radio" id="radio4" value="Денег нет, но вы держитесь">
+                    </label>
+                    <button type="submit" class="btn submit-btn"></button>
+                </form>
+                <div class="form-send-massage">Спасибо, что поделились!</div>
+            </div>
+            <button type="button" class="close" onclick="closeModal()">Я кликнул просто посмотреть</button>
+        </div>
+    </div>
+</div>
+<script src="libs/jq/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

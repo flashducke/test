@@ -1,0 +1,95 @@
+//mixin
+@mixin pseudo-element($content: "", $display: block, $pos: absolute) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin translateX() {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin translateY() {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin translateCenter() {
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+//media
+@mixin media($size) {
+  @media screen and (max-width: $size) {
+    @content;
+  }
+}
+
+@mixin doubleMedia($size1, $size2) {
+  @media screen and (max-width: $size1), (max-width: $size2) {
+    @content;
+  }
+}
+
+//keyframes
+
+@keyframes decor-container {
+  0% {
+    transform: translateY(7%);
+  }
+  100% {
+    transform: translateY(-7%);
+  }
+}
+
+@keyframes decor-line {
+  0% {
+    transform: translateY(0);
+  }
+
+
+  100% {
+    transform: translateY(-7%);
+  }
+
+}
+
+@keyframes modalAnimation {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+@keyframes modalAnimation2 {
+  0% {
+    display: none;
+    transform: scale(0);
+  }
+  100% {
+    display: block;
+    transform: scale(1);
+  }
+}
+@keyframes modalICon {
+  0% {
+    display: none;
+    transform: translateX(-50%) translateY(-150%);
+  }
+  100% {
+    display: block;
+    transform: translateX(-50%) translateY(-100%);
+  }
+}
+@keyframes fadeInP {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
