@@ -1,16 +1,15 @@
 document.addEventListener("DOMContentLoaded", function (event) {
     //decor bg line
-    var p = document.querySelector('.decor-stripes path'),
+    let p = $('.decor-stripes path'),
         offset = 2000;
 
-    var offsetMe = function() {
+    let offsetMe = function() {
         if(offset < 0) offset = 2000;
-        p.style.strokeDashoffset = offset;
+        p.css ('strokeDashoffset', offset);
         offset--;
 
         requestAnimationFrame(offsetMe);
     }
-
     offsetMe();
 
 

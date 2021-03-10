@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url(../libs/normalize.css);
-@keyframes decor-container {
-  0% {
-    transform: translateY(7%); }
-  100% {
-    transform: translateY(-7%); } }
-
-@keyframes decor-line {
-  0% {
-    transform: translateY(0); }
-  100% {
-    transform: translateY(-7%); } }
-
 @keyframes modalAnimation {
   0% {
     display: none;

@@ -36,27 +36,6 @@
 
 //keyframes
 
-@keyframes decor-container {
-  0% {
-    transform: translateY(7%);
-  }
-  100% {
-    transform: translateY(-7%);
-  }
-}
-
-@keyframes decor-line {
-  0% {
-    transform: translateY(0);
-  }
-
-
-  100% {
-    transform: translateY(-7%);
-  }
-
-}
-
 @keyframes modalAnimation {
   0% {
     display: none;
