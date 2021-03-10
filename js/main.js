@@ -50,7 +50,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let $this = $(this);
         $this.on('click', function () {
             if ($this.find('input').is(':checked')) {
-                console.log($this.find('input').val());
                 $this.siblings('.submit-btn').click();
             }
         })
